@@ -1,0 +1,22 @@
+@import "src/Header/headerStyle";
+@import "src/Home/homeStyle";
+@import "src/Service/serviceStyle";
+@import "src/Costom/costom";
+@import "src/Extra/extraStyle";
+@import "src/Team/teamStyle";
+@import "src/Sub/subStyle";
+@import "src/Footer/footerStyle";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  width: 87%;
+  margin: 0 auto;
+}

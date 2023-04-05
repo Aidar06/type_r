@@ -1,0 +1,101 @@
+#home{
+  background: #111827;
+  padding: 80px 0;
+  .home{
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img{
+      z-index: 1;
+    }
+    &--group{
+      z-index: 1;
+      h1{
+        z-index: 1;
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 84px;
+        font-family: sans-serif;
+        letter-spacing: 0.02em;
+        background: linear-gradient(89.83deg, #2563EB 0.11%, #D946EF 58.65%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);
+      }
+      p{
+        z-index: 1;
+        font-weight: 500;
+        font-size: 15px;
+        color: #E5E7EB;
+        font-family: sans-serif;
+        opacity: 0.8;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.07);
+        margin-top: 20px;
+        line-height: 30px;
+      }
+      &__block{
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        button{
+          font-weight: 500;
+          font-size: 16px;
+          color: #F9FAFB;
+          background: linear-gradient(90.35deg, #2563EB 0.36%, #D946EF 201.02%);
+          border-radius: 6px;
+          padding: 15px 20px;
+          border: none;
+        }
+        div{
+          color: white;
+          margin-left: 40px;
+          display: flex;
+          align-items: center;
+          .home--group__block--icon{
+            font-size: 27px;
+          }
+          span{
+            font-weight: 500;
+            font-size: 16px;
+            color: #F9FAFB;
+            margin-left: 30px;
+          }
+        }
+      }
+    }
+  }
+  .dio1{
+    position: absolute;
+    left: -9.65%;
+    right: 84.58%;
+    top: 3.14%;
+    bottom: 90.2%;
+    width: 360px;
+    height: 300px;
+    background: rgba(29, 78, 216, 0.45);
+    filter: blur(100px);
+  }
+  .dio2{
+    position: absolute;
+    left: 76.11%;
+    right: 0.28%;
+    top: 20.52%;
+    bottom: 90.2%;
+    width: 340px;
+    height: 280px;
+    background: #5141DA;
+    filter: blur(100px);
+  }
+  .bio3{
+    position: absolute;
+    left: 57.57%;
+    right: 63.33%;
+    top: 4.24%;
+    bottom: 93.34%;
+    width: 130px;
+    height: 100px;
+    background: #D946EF;
+    filter: blur(100px);
+  }
+}
