@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {BsArrowRightShort} from "react-icons/bs";
 import icon1 from '../assets/img/icon1.png'
 import icon2 from '../assets/img/icon2.png'
@@ -8,6 +8,7 @@ import icon5 from '../assets/img/icon5.png'
 import icon6 from '../assets/img/icon6.png'
 
 const Service = () => {
+    const [click,setClick] = useState(false)
     return (
         <section id='service'>
             <div className="container">
@@ -25,7 +26,7 @@ const Service = () => {
                             <h2>Order Management</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
                             <div className='service--group__block--learn'>
-                                <span>Learn more</span>
+                                <span onClick={()=> setClick(!click)}>Learn more</span>
                                 <BsArrowRightShort/>
                             </div>
                         </div>
@@ -38,11 +39,11 @@ const Service = () => {
                             <h2>Social Assistant</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
                             <div className='service--group__block--learn'>
-                                <span>Learn more</span>
+                                <span onClick={()=> setClick(!click)}>Learn more</span>
                                 <BsArrowRightShort/>
                             </div>
                         </div>
-                        <div className='service--group__block'>
+                        <div className='service--group__block' >
                             <div style={{
                                 background: 'linear-gradient(180deg, #84D8ED 0%, #4292BB 100%)'
                             }} className='service--group__block--img'>
@@ -51,11 +52,11 @@ const Service = () => {
                             <h2>Crypto Platform</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
                             <div className='service--group__block--learn'>
-                                <span>Learn more</span>
+                                <span onClick={()=> setClick(!click)} >Learn more</span>
                                 <BsArrowRightShort/>
                             </div>
                         </div>
-                        <div className='service--group__block'>
+                        <div style={{display: click ? '' : 'none'}} className='service--group__block'>
                             <div style={{
                                 background: 'linear-gradient(180deg, #92EFC3 0%, #2F8F5B 100%)'
                             }} className='service--group__block--img'>
@@ -64,11 +65,11 @@ const Service = () => {
                             <h2>Smart Trading Modules</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
                             <div className='service--group__block--learn'>
-                                <span>Learn more</span>
+                                <span onClick={()=> setClick(!click)}>Learn more</span>
                                 <BsArrowRightShort/>
                             </div>
                         </div>
-                        <div className='service--group__block'>
+                        <div style={{display: click ? '' : 'none'}} className='service--group__block'>
                             <div style={{
                                 background: 'linear-gradient(180deg, #BC7FD9 0%, #923283 100%)'
                             }} className='service--group__block--img'>
@@ -77,11 +78,11 @@ const Service = () => {
                             <h2>Analyzer of the News</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
                             <div className='service--group__block--learn'>
-                                <span>Learn more</span>
+                                <span onClick={()=> setClick(!click)}>Learn more</span>
                                 <BsArrowRightShort/>
                             </div>
                         </div>
-                        <div className='service--group__block'>
+                        <div style={{display: click ? '' : 'none'}} className='service--group__block'>
                             <div style={{
                                 background: 'linear-gradient(180deg, #8684ED 0%, #4247BB 100%)'
                             }} className='service--group__block--img'>
@@ -90,7 +91,7 @@ const Service = () => {
                             <h2>Module of Price Notification</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur the adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p>
                             <div className='service--group__block--learn'>
-                                <span>Learn more</span>
+                                <span onClick={()=> setClick(!click)}>Learn more</span>
                                 <BsArrowRightShort/>
                             </div>
                         </div>
